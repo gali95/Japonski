@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="commons-csv-1.4">
+    <archive path="/home/gali95/IdeaProjects/Japonski/commons-csv-1.4-bin/commons-csv-1.4.jar" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,8 +1,8 @@
 package LangApp2.Vocab.Dictionary;
 
 import LangApp2.Vocab.DefaultTagsObj;
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVRecord;
+//import org.apache.commons.csv.CSVFormat;
+//import org.apache.commons.csv.CSVRecord;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -85,16 +85,16 @@ public class SimpleTextParser implements TextToDictionaryParser{
     public Dictionary Parse(String entry) {
 
         Reader in = new StringReader(entry);
-        try {
-            for (CSVRecord record : CSVFormat.DEFAULT.parse(in)) {
-                for (String field : record) {
-                    System.out.print("\"" + field + "\", ");
-                }
-                System.out.println();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //try {
+            //for (CSVRecord record : CSVFormat.DEFAULT.parse(in)) {
+            //    for (String field : record) {
+            //        System.out.print("\"" + field + "\", ");
+            //    }
+            //    System.out.println();
+            //}
+        //} catch (IOException e) {
+        //    e.printStackTrace();
+        //}
         return null;
     }
 }
