@@ -15,8 +15,8 @@ import java.util.Arrays;
  */
 public class visualTest {
     private JButton poprzedniButton;
-    private JButton następnyButton;
-    private JButton poprawnośćButton;
+    private JButton nastepnyButton;
+    private JButton poprawnoscButton;
     private JButton koniecButton;
     private JPanel ImgPanel;
     private JPanel DrawPanel;
@@ -58,12 +58,12 @@ public class visualTest {
 
                 if (source == poprzedniButton) {
                     PoprzedniButtonPressed();
-                } else if (source == następnyButton) {
+                } else if (source == nastepnyButton) {
                     NastepnyButtonPressed();
                 } else if (source == pokazUkryjRozwiazanieButton) {
                     PokazUkryjRozwiazanieButton();
-                } else if (source == poprawnośćButton) {
-                    PoprawnośćButtonPressed();
+                } else if (source == poprawnoscButton) {
+                    PoprawnoscButtonPressed();
                 } else if (source == koniecButton) {
                     KoniecButtonPressed();
                 }
@@ -72,26 +72,26 @@ public class visualTest {
         };
 
         poprzedniButton.addActionListener(defaultListener);
-        następnyButton.addActionListener(defaultListener);
+        nastepnyButton.addActionListener(defaultListener);
         pokazUkryjRozwiazanieButton.addActionListener(defaultListener);
-        poprawnośćButton.addActionListener(defaultListener);
+        poprawnoscButton.addActionListener(defaultListener);
         koniecButton.addActionListener(defaultListener);
 
         NastepnyPressedAction npa = new NastepnyPressedAction();
         PoprzedniPressedAction ppa = new PoprzedniPressedAction();
         PokazUkryjPressedAction pupa = new PokazUkryjPressedAction();
-        PoprawnośćPressedAction poppa = new PoprawnośćPressedAction();
+        PoprawnoscPressedAction poppa = new PoprawnoscPressedAction();
         KoniecPressedAction kpa = new KoniecPressedAction();
 
         mainPanel.getInputMap(2).put(KeyStroke.getKeyStroke("D"), "nastepnyButtonKeyboardShortcut");
         mainPanel.getInputMap(2).put(KeyStroke.getKeyStroke("A"), "poprzedniButtonKeyboardShortcut");
-        mainPanel.getInputMap(2).put(KeyStroke.getKeyStroke("Z"), "poprawnośćButtonKeyboardShortcut");
+        mainPanel.getInputMap(2).put(KeyStroke.getKeyStroke("Z"), "poprawnoscButtonKeyboardShortcut");
         mainPanel.getInputMap(2).put(KeyStroke.getKeyStroke("X"), "pokazUkryjButtonKeyboardShortcut");
         mainPanel.getInputMap(2).put(KeyStroke.getKeyStroke("C"), "koniecButtonKeyboardShortcut");
 
         mainPanel.getActionMap().put("nastepnyButtonKeyboardShortcut", npa);
         mainPanel.getActionMap().put("poprzedniButtonKeyboardShortcut", ppa);
-        mainPanel.getActionMap().put("poprawnośćButtonKeyboardShortcut", pupa);
+        mainPanel.getActionMap().put("poprawnoscButtonKeyboardShortcut", pupa);
         mainPanel.getActionMap().put("pokazUkryjButtonKeyboardShortcut", poppa);
         mainPanel.getActionMap().put("koniecButtonKeyboardShortcut", kpa);
 
@@ -126,7 +126,7 @@ public class visualTest {
 
     }
 
-    private void PoprawnośćButtonPressed() {
+    private void PoprawnoscButtonPressed() {
         actualTest.chars[actualField].success = !actualTest.chars[actualField].success;
         ExportLines();
         SetField();
@@ -201,12 +201,12 @@ public class visualTest {
         poprzedniButton = new JButton();
         poprzedniButton.setText("Poprzedni");
         mainPanel.add(poprzedniButton, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        następnyButton = new JButton();
-        następnyButton.setText("Następny");
-        mainPanel.add(następnyButton, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        poprawnośćButton = new JButton();
-        poprawnośćButton.setText("Poprawność");
-        mainPanel.add(poprawnośćButton, new com.intellij.uiDesigner.core.GridConstraints(0, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        nastepnyButton = new JButton();
+        nastepnyButton.setText("Nastepny");
+        mainPanel.add(nastepnyButton, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        poprawnoscButton = new JButton();
+        poprawnoscButton.setText("Poprawnosc");
+        mainPanel.add(poprawnoscButton, new com.intellij.uiDesigner.core.GridConstraints(0, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         koniecButton = new JButton();
         koniecButton.setText("Koniec");
         mainPanel.add(koniecButton, new com.intellij.uiDesigner.core.GridConstraints(0, 3, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -260,10 +260,10 @@ public class visualTest {
 
     }
 
-    class PoprawnośćPressedAction extends AbstractAction {
+    class PoprawnoscPressedAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
-            PoprawnośćButtonPressed();
+            PoprawnoscButtonPressed();
             //System.out.println("przycisksiemaaa");
         }
 
