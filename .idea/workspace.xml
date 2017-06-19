@@ -10,14 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5003ccb-e879-4ffc-b2b0-239fbe768100" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/untitled.eml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$PoprawnoÅÄPressedAction.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/ExamplePack/ExcerciseTest.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/ExamplePack/ExcerciseTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/ExamplePack/StringExcerciseExampleGUI.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/ExamplePack/StringExcerciseExampleGUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$1.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$2.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$3.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$4.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$5.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/GUI/TestMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/Vocab/Dictionary/Dictionary.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/Vocab/Dictionary/Dictionary.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/Vocab/Dictionary/SimpleTextParser$groupsSettings.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/Vocab/Dictionary/SimpleTextParser$groupsSettings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/LangApp2/Vocab/Dictionary/SimpleTextParser.class" afterPath="$PROJECT_DIR$/out/production/untitled/LangApp2/Vocab/Dictionary/SimpleTextParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/mainApp$1.class" afterPath="$PROJECT_DIR$/out/production/untitled/mainApp$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/mainApp.class" afterPath="$PROJECT_DIR$/out/production/untitled/mainApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$1.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$KoniecPressedAction.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest$KoniecPressedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$NastepnyPressedAction.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest$NastepnyPressedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$PokazUkryjPressedAction.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest$PokazUkryjPressedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$PoprawnośćPressedAction.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest$PoprawnośćPressedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest$PoprzedniPressedAction.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest$PoprzedniPressedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/visualTest.class" afterPath="$PROJECT_DIR$/out/production/untitled/visualTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partial" afterPath="$PROJECT_DIR$/partial" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LangApp2/ExamplePack/ExcerciseTest.java" afterPath="$PROJECT_DIR$/src/LangApp2/ExamplePack/ExcerciseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LangApp2/ExamplePack/StringExcerciseExampleGUI.java" afterPath="$PROJECT_DIR$/src/LangApp2/ExamplePack/StringExcerciseExampleGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LangApp2/GUI/TestMenu.java" afterPath="$PROJECT_DIR$/src/LangApp2/GUI/TestMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/Dictionary.java" afterPath="$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/Dictionary.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/SimpleTextParser.java" afterPath="$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/SimpleTextParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled.iml" afterPath="$PROJECT_DIR$/untitled.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mainApp.java" afterPath="$PROJECT_DIR$/src/mainApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/visualTest.java" afterPath="$PROJECT_DIR$/src/visualTest.java" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
-              <caret line="28" column="217" lean-forward="false" selection-start-line="28" selection-start-column="217" selection-end-line="28" selection-end-column="217" />
+              <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -112,14 +135,10 @@
       <file leaf-file-name="SimpleTextParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/SimpleTextParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="76" column="53" lean-forward="false" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+            <state relative-caret-position="418">
+              <caret line="115" column="6" lean-forward="false" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,10 +237,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="143" />
-    <option name="y" value="157" />
-    <option name="width" value="1890" />
-    <option name="height" value="803" />
+    <option name="y" value="27" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -260,6 +278,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,11 +293,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Japonski" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Japonski" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,7 +320,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="project.propGUI" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -679,23 +711,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="143" y="157" width="1890" height="803" extended-state="0" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34920636" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58248174" sideWeight="0.5125" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42539683" sideWeight="0.5229167" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42566845" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42539683" sideWeight="0.47708333" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15449736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15208334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -706,7 +740,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18796198" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1021,21 +1054,17 @@
     <entry file="file://$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
-          <caret line="28" column="217" lean-forward="false" selection-start-line="28" selection-start-column="217" selection-end-line="28" selection-end-column="217" />
+          <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LangApp2/Vocab/Dictionary/SimpleTextParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="76" column="53" lean-forward="false" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+        <state relative-caret-position="418">
+          <caret line="115" column="6" lean-forward="false" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
           </folding>
         </state>
       </provider>

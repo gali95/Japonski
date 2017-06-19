@@ -1,0 +1,11 @@
+!right;!addtags;costam;inne;
+!left;!settags;dsadsa;
+!connection!removetags;fasfas;
+!above;!setsources;fsafasf;
+!above;!setlang;fsafas;
+jakikolwiek;fasfsa;!connect;arqqsf;farqqa
+
+[!right/!left/!above/!connection];[!addtags/!settags/!removetags]
+[!right/!left/!above];[!setlang]
+[!above];[!setsources]
+

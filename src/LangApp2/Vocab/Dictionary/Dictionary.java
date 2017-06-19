@@ -26,7 +26,7 @@ public class Dictionary {
         }
         return null;
     }
-    public void AddConnection(Word first, Word second, WordConnection conn, String[] firstTags, String[] secondTags, String[] connTags)  // firstTags and secondTags will be added as tags without removing previous ones
+    public void AddConnection(Word first, Word second, WordConnection conn)
     {
 
         Word selected1 = getWord(first.getContent(),first.getLang());
@@ -34,7 +34,7 @@ public class Dictionary {
         {
             AddWord(first);
             selected1 = first;
-            selected1.setTags(firstTags);
+            selected1.setTags(first.getTags());
         }
 
         Word selected2 = getWord(second.getContent(),second.getLang());
@@ -42,9 +42,9 @@ public class Dictionary {
         {
             AddWord(second);
             selected2 = second;
-            selected2.setTags(secondTags);
+            selected2.setTags(second.getTags());
         }
-        conn.setTags(connTags);
+        conn.setTags(conn.getTags());
         conn.SetWords(selected1,selected2);
 
         if(connections.contains(conn)) return;

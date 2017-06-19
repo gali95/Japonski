@@ -16,7 +16,18 @@ public class SimpleTextParser implements TextToDictionaryParser{
     private Dictionary outputDictionary;
     private groupsSettings right,left,above,selected;
     private String[] aboveSource;
-    private String[] connectionTags;
+    private DefaultTagsObj connectionTags;
+    
+    private class groupsSettings
+    {
+        public DefaultTagsObj defTags;
+        public String defLang;
+
+        public groupsSettings()
+        {
+            defTags = new DefaultTagsObj();
+        }
+    }
 
     public SimpleTextParser()
     {
@@ -30,26 +41,17 @@ public class SimpleTextParser implements TextToDictionaryParser{
         left=new groupsSettings();
         above=new groupsSettings();
         aboveSource = null;
+        connectionTags = new DefaultTagsObj();
     }
 
-    private class groupsSettings
-    {
-        public DefaultTagsObj defTags;
-        public String defLang;
-
-        public groupsSettings()
-        {
-            defTags = new DefaultTagsObj();
-        }
-    }
-
+   
     public void AddToDictionary(String[] entry)
     {
         if(entry.length<3) return;
         boolean stop = true;
         int equalSignPosition = 0;
         for(int i=1;i<entry.length;i++) {
-            if (entry[i].equals("=")) {
+            if (entry[i].equals("!connect")) {
                 equalSignPosition = i;
                 stop = false;
                 break;
@@ -57,6 +59,7 @@ public class SimpleTextParser implements TextToDictionaryParser{
         }
         if(stop) return;
         Word leftWord,rightWord;
+        WordConnection conn;
         for(int i=0;i<equalSignPosition;i++)
         {
             for(int j=equalSignPosition+1;j<entry.length;j++)
@@ -64,22 +67,53 @@ public class SimpleTextParser implements TextToDictionaryParser{
                 leftWord = new Word();
                 leftWord.setContent(entry[i]);
                 leftWord.setLang(left.defLang);
+                leftWord.setTags(left.defTags.Get());
 
                 rightWord = new Word();
                 rightWord.setContent(entry[j]);
                 rightWord.setLang(right.defLang);
+                rightWord.setTags(right.defTags.Get());
+                
+                conn = new WordConnection();
+                conn.setTags(connectionTags.Get());
 
-                outputDictionary.AddConnection(leftWord,rightWord,new WordConnection(),left.defTags.Get(),right.defTags.Get(),connectionTags);
+                outputDictionary.AddConnection(leftWord,rightWord,conn);
 
-                if(aboveSource.length>0)
+                for(int k=0;k<aboveSource.length;k++)
                 {
                     Word aboveWord = new Word();
                     aboveWord.setLang(above.defLang);
-                    // TODO continue dis szit
+                    aboveWord.setTags(above.defTags.Get());
+                    aboveWord.setContent(aboveSource[k]);
+                    
+                    conn = new WordConnection();
+                    conn.setTags(connectionTags.Get());
+                    outputDictionary.AddConnection(aboveWord,rightWord,conn);
+                    
+                    conn = new WordConnection();
+                    conn.setTags(connectionTags.Get());
+                    outputDictionary.AddConnection(aboveWord,leftWord,conn);
+                    
                 }
             }
         }
     }
+
+    public boolean SetCommandTarget(String[] entry)
+    {
+    	return false;
+    }
+    /*
+    public void CommandAddTags(String[] entry);
+    
+    public void CommandSetTags(String[] entry);
+    
+    public void CommandRemoveTags(String[] entry);
+    
+    public void CommandSetAboveSources(String[] entry);
+    
+    public void CommandSetLang(String[] entry);
+    */
 
     @Override
     public Dictionary Parse(String entry) {
