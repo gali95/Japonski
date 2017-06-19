@@ -2,7 +2,9 @@
 <classpath>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/commons-csv-1.4"/>
-	<classpathentry kind="lib" path="forms_rt.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/commons-csv-1.4"/>
+	<classpathentry exported="true" kind="lib" path="forms_rt.jar"/>
+	<classpathentry kind="lib" path="commons-csv-1.4-bin/commons-csv-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="commons-csv-1.4-bin/commons-csv-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

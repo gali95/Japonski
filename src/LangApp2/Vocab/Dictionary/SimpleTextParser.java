@@ -1,12 +1,20 @@
 package LangApp2.Vocab.Dictionary;
 
 import LangApp2.Vocab.DefaultTagsObj;
-//import org.apache.commons.csv.CSVFormat;
-//import org.apache.commons.csv.CSVRecord;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
 
 /**
  * Created by Lach on 2017-06-03.
@@ -14,9 +22,8 @@ import java.io.StringReader;
 public class SimpleTextParser implements TextToDictionaryParser{
 
     private Dictionary outputDictionary;
-    private groupsSettings right,left,above,selected;
+    private groupsSettings right,left,above,selected,connection;
     private String[] aboveSource;
-    private DefaultTagsObj connectionTags;
     
     private class groupsSettings
     {
@@ -40,8 +47,9 @@ public class SimpleTextParser implements TextToDictionaryParser{
         right=new groupsSettings();
         left=new groupsSettings();
         above=new groupsSettings();
+        connection = new groupsSettings();
         aboveSource = null;
-        connectionTags = new DefaultTagsObj();
+        
     }
 
    
@@ -75,7 +83,7 @@ public class SimpleTextParser implements TextToDictionaryParser{
                 rightWord.setTags(right.defTags.Get());
                 
                 conn = new WordConnection();
-                conn.setTags(connectionTags.Get());
+                conn.setTags(connection.defTags.Get());
 
                 outputDictionary.AddConnection(leftWord,rightWord,conn);
 
@@ -87,11 +95,11 @@ public class SimpleTextParser implements TextToDictionaryParser{
                     aboveWord.setContent(aboveSource[k]);
                     
                     conn = new WordConnection();
-                    conn.setTags(connectionTags.Get());
+                    conn.setTags(connection.defTags.Get());
                     outputDictionary.AddConnection(aboveWord,rightWord,conn);
                     
                     conn = new WordConnection();
-                    conn.setTags(connectionTags.Get());
+                    conn.setTags(connection.defTags.Get());
                     outputDictionary.AddConnection(aboveWord,leftWord,conn);
                     
                 }
@@ -99,36 +107,130 @@ public class SimpleTextParser implements TextToDictionaryParser{
         }
     }
 
-    public boolean SetCommandTarget(String[] entry)
+    public boolean SetCommandTarget(String[] entry)  // returns true if target was successfully set
     {
-    	return false;
+    	switch(entry[0])
+    	{
+    	case "!right" :
+    		selected = right;
+    		break;
+    	case "!left" :
+    		selected = left;
+    		break;
+    	case "!above" :
+    		selected = above;
+    		break;
+    	case "!connection" :
+    		selected = connection;
+    		break;
+    	default:
+    		return false;
+    	
+    	}
+    	return true;
     }
-    /*
-    public void CommandAddTags(String[] entry);
     
-    public void CommandSetTags(String[] entry);
+    public void CommandAddTags(String[] entry)
+    {
+    	selected.defTags.Add(Arrays.copyOfRange(entry, 2, entry.length));
+    }
     
-    public void CommandRemoveTags(String[] entry);
+    public void CommandSetTags(String[] entry)
+    {
+    	selected.defTags.Set(Arrays.copyOfRange(entry, 2, entry.length));
+    }
     
-    public void CommandSetAboveSources(String[] entry);
+    public void CommandRemoveTags(String[] entry)
+    {
+    	selected.defTags.Remove(Arrays.copyOfRange(entry, 2, entry.length));
+    }
     
-    public void CommandSetLang(String[] entry);
-    */
+    public void CommandSetAboveSources(String[] entry)
+    {
+    	aboveSource = Arrays.copyOfRange(entry, 2, entry.length);
+    }
+    
+    public void CommandSetLang(String[] entry)
+    {
+    	selected.defLang = entry[2];
+    }
+    
+    public void ExecuteCSVLine(String[] entryLine)
+    {
+    	if(SetCommandTarget(entryLine))
+    	{
+    		switch(entryLine[1])
+    		{
+    		case "!addtags" :
+    			CommandAddTags(entryLine);
+    			break;
+    		case "!removetags" :
+    			CommandRemoveTags(entryLine);
+    			break;
+    		case "!settags" :
+    			CommandSetTags(entryLine);
+    			break;
+    		case "!setlang" :
+    			if(selected == connection)
+    			{
+    				break;
+    			}
+    			CommandSetLang(entryLine);
+    			break;
+    		case "!setsources" :
+    			if(selected != above)
+    			{
+    				break;
+    			}
+    			CommandSetAboveSources(entryLine);
+    			break;
+    		default :
+    			break;
+    		}
+    	}
+    	else
+    	{
+    		AddToDictionary(entryLine);
+    	}
+    }
 
     @Override
     public Dictionary Parse(String entry) {
 
+    	String[] commandEntry;
+    	int i;
         Reader in = new StringReader(entry);
-        //try {
-            //for (CSVRecord record : CSVFormat.DEFAULT.parse(in)) {
-            //    for (String field : record) {
-            //        System.out.print("\"" + field + "\", ");
-            //    }
-            //    System.out.println();
-            //}
-        //} catch (IOException e) {
-        //    e.printStackTrace();
-        //}
+        try {
+            for (CSVRecord record : CSVFormat.DEFAULT.parse(in)) {
+
+            	commandEntry = new String[record.size()];
+            	i = 0;
+            	
+            	for (String field : record) {
+            		commandEntry[i] = field;
+                }
+
+            	ExecuteCSVLine(commandEntry);
+            	
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return null;
+    }
+    
+    public static void main(String[] array)
+    {
+    	SimpleTextParser tmp = new SimpleTextParser();
+    	
+    	String text;
+		try {
+			text = new String(Files.readAllBytes(Paths.get("tmp.txt")), StandardCharsets.UTF_8);
+			tmp.Parse(text);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+    	
     }
 }

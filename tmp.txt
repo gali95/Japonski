@@ -1,0 +1,6 @@
+!right,!addtags,costam,inne
+!left,!settags,dsadsa
+!connection,!removetags,fasfas
+!above,!setsources,fsafasf
+!above,!setlang,fsafas
+jakikolwiek,fasfsa,!connect,arqqsf,farqqa
