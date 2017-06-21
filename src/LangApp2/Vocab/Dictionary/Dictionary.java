@@ -31,32 +31,31 @@ public class Dictionary {
         }
         return null;
     }
-    public void AddConnection(Word first, Word second, WordConnection conn)
+    public void AddConnection(Word first, Word second, WordConnection conn) // function doesn't check content of arguments, currently to ensure proper behaviour, words should have content and lang field set. Function can change connection class (conn1, conn2) even if it won't be added to dictionary connections
     {
 
-    	// TODO ensure it works "correctly"
-    	
         Word selected1 = getWord(first.getContent(),first.getLang());
+        Word selected2 = getWord(second.getContent(),second.getLang());
+        boolean wordWasThere1 = false;
+        boolean wordWasThere2 = false;
+        
+        if(selected1 != null) wordWasThere1 = true;
+        if(selected2 != null) wordWasThere2 = true;
+        
         if(selected1 == null)
         {
             AddWord(first);
             selected1 = first;
-            //addWordAfterwards1 = true;
-            //selected1.setTags(first.getTags());
         }
 
-        Word selected2 = getWord(second.getContent(),second.getLang());
         if(selected2 == null)
         {
             AddWord(second);
             selected2 = second;
-            //addWordAfterwards2 = true;
-            //selected2.setTags(second.getTags());
         }
-        //conn.setTags(conn.getTags());
         conn.SetWords(selected1,selected2);
 
-        if(connections.contains(conn)) return;
+        if((wordWasThere1 && wordWasThere2) && connections.contains(conn)) return;
 
         connections.add(conn);
         
@@ -70,6 +69,9 @@ public class Dictionary {
     }
 
     
+    
+    //private ArrayList<Word> GetAllWords() TODO functions go get words and connections, filtered and unfiltered
+    //
     
     @Override
     public String toString()
