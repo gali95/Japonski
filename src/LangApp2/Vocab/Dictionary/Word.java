@@ -8,6 +8,11 @@ import java.util.Objects;
  */
 public class Word{
 
+	public Word()
+	{
+		lang = "";    // TODO think of other way of what to do when noone set lang
+	}
+	
     private String content,tags[],lang;
     private ArrayList<WordConnection> connectedWords;
 
@@ -49,5 +54,16 @@ public class Word{
     public int hashCode()
     {
         return Objects.hash(content,lang);
+    }
+    
+    @Override
+    public String toString()
+    {
+    	String tags="";
+    	for(int i=0;i<this.tags.length;i++)
+    	{
+    		tags += this.tags[i] + ", ";
+    	}
+    	return "[ content: " + content + " lang: " + lang + " tags: " + tags + " ]";
     }
 }

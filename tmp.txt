@@ -1,6 +1,8 @@
+!left,!setlang,lewyyy
+!right,!setlang,prawicelele
 !right,!addtags,costam,inne
 !left,!settags,dsadsa
 !connection,!removetags,fasfas
 !above,!setsources,fsafasf
-!above,!setlang,fsafas
+!above,!setlang,aniolek
 jakikolwiek,fasfsa,!connect,arqqsf,farqqa

@@ -51,4 +51,15 @@ public class WordConnection {
         }
     }
 
+    @Override
+    public String toString()
+    {
+    	String tags="";
+    	for(int i=0;i<this.tags.length;i++)
+    	{
+    		tags += this.tags[i] + ", ";
+    	}
+    	return "[ " + conn1.getContent() + "(" +conn1.getLang() + ") - " + conn2.getContent() + "(" +conn2.getLang() + ") tags: " + tags + " ]";
+    }
+    
 }

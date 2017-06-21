@@ -207,7 +207,7 @@ public class SimpleTextParser implements TextToDictionaryParser{
             	i = 0;
             	
             	for (String field : record) {
-            		commandEntry[i] = field;
+            		commandEntry[i++] = field;
                 }
 
             	ExecuteCSVLine(commandEntry);
@@ -227,6 +227,7 @@ public class SimpleTextParser implements TextToDictionaryParser{
 		try {
 			text = new String(Files.readAllBytes(Paths.get("tmp.txt")), StandardCharsets.UTF_8);
 			tmp.Parse(text);
+			System.out.print(tmp.outputDictionary.toString());
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
