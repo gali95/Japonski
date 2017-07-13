@@ -14,7 +14,7 @@ public class Word{
 	}
 	
     private String content,tags[],lang;
-    private ArrayList<WordConnection> connectedWords;
+    //private ArrayList<WordConnection> connectedWords;
 
     public String getContent() {
         return content;

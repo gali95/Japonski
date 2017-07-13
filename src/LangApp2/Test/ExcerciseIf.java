@@ -2,6 +2,9 @@ package LangApp2.Test;
 
 import LangApp2.GUI.ExcerciseGUIIf;
 
+import java.util.Date;
+import java.util.Map;
+
 import javax.swing.*;
 
 /**
@@ -20,4 +23,8 @@ public interface ExcerciseIf {
     public String GetName();
     public int GetExcerciseNumber();
     public void SetExcerciseNumber(int ind);
+    
+    // TODO implement funcs below
+    public boolean isSourceEqual(ExcerciseIf other);
+    public ExcerciseInput GetExcerciseInput();
 }
