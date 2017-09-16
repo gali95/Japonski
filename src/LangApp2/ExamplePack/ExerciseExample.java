@@ -2,6 +2,7 @@ package LangApp2.ExamplePack;
 
 import LangApp2.GUI.ExcerciseGUIIf;
 import LangApp2.Test.ExcerciseIf;
+import LangApp2.Test.ExcerciseInput;
 import LangApp2.Test.ExcerciseState;
 
 import javax.swing.*;
@@ -105,4 +106,15 @@ public class ExerciseExample implements ExcerciseIf {
     private boolean[] odp;
     private boolean[] selectedOdp;
     private int index;
+	@Override
+	public boolean isSourceEqual(ExcerciseIf other) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public ExcerciseInput GetExcerciseInput() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

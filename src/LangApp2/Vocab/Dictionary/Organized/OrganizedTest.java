@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class OrganizedTest {
 
+	/*
 	private ArrayList<OrganizedExcercise> excercises;
 	// settings class
 	
@@ -20,6 +21,8 @@ public class OrganizedTest {
 
 	+GenerateTest() 
 
-	+AddResults(TestIf)
+	+AddResults()
+	
+//	*/
 	
 }
